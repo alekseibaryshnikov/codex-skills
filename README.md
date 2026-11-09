@@ -7,6 +7,7 @@ Independent, reusable skills for designing, building, and testing software with 
 | Skill | Purpose | Package |
 | --- | --- | --- |
 | `design-web-apps` | Design and build web apps with clear tasks, a distinctive visual identity, complete interactions, and responsive layouts. Includes usability, accessibility, performance, and visual review guidance. | [Instructions](skills/design-web-apps/SKILL.md) |
+| `game-reward-design` | Build, improve, or review game reward loops, bonus progression, meaningful interaction, and pacing. Includes evidence-based repeat-play and LTV analysis, deterministic outcome checks, and dated research references. | [Instructions](skills/game-reward-design/SKILL.md) |
 | `sdd-tdd` | Use source comments as maintained specification artifacts, document tests against acceptance criteria, and run observed red-to-green cycles before implementing behavior changes. | [Instructions](skills/sdd-tdd/SKILL.md) |
 | `stake-submission-review` | Review all 51 supplied Stake submission and release checks with evidence, Social Mode and replay coverage, and explicit unverified gaps. | [Instructions](skills/stake-submission-review/SKILL.md) |
 
@@ -18,6 +19,10 @@ skills/
     SKILL.md
     agents/
     assets/
+    references/
+  game-reward-design/
+    SKILL.md
+    agents/
     references/
   sdd-tdd/
     SKILL.md
@@ -50,7 +55,7 @@ See the [official skill documentation](https://learn.chatgpt.com/docs/build-skil
 
 ## Use the skills
 
-After installation, invoke `$design-web-apps` or `$sdd-tdd` in Codex, or let the host select a skill when the request matches its description. All packages allow implicit invocation. Use `$stake-submission-review` for Stake submission and release readiness reviews. UI design work can use both: `design-web-apps` guides the product and interface, while `sdd-tdd` governs behavioral contracts, test documentation, and implementation order.
+After installation, invoke `$design-web-apps`, `$game-reward-design`, or `$sdd-tdd` in Codex, or let the host select a skill when the request matches its description. All packages allow implicit invocation. Use `$game-reward-design` for game reward loops, bonus pacing, and repeat-play analysis, and `$stake-submission-review` for Stake submission and release readiness reviews. UI design work can use both: `design-web-apps` guides the product and interface, while `sdd-tdd` governs behavioral contracts, test documentation, and implementation order.
 
 To require SDD/TDD across your projects without mentioning the skill in every request, add a standing instruction to the global `AGENTS.md` in your Codex home directory:
 
